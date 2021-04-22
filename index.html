@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SMAU ID Maker</title>
+    <title>NHCL ID Maker</title>
     <link rel="icon" href="assets/favicon.ico" />
     <meta
       name="viewport"
@@ -109,7 +109,7 @@
       </div>
       <div class="row">
         <div class="col col-md-8 col-md-offset-2 col-xs-12">
-          <h2>Make your SMAU ID</h2>
+          <h2>Make NHCL ID</h2>
 
           <label for="idNumber" class="sr-only">Full Name</label>
           <input
@@ -133,7 +133,7 @@
             type="text"
             id="title"
             class="form-control"
-            placeholder="e.g SMAU Member"
+            placeholder="e.g NHCL Member"
             required
           />
           <label for="division">Division</label>
@@ -258,7 +258,7 @@
         var idTitle = new Konva.Text({
           x: 80,
           y: 40,
-          text: 'STINGY MEN ASSOCIATION UG',
+          text: 'NULUBALE HOLDINGS Co. LTD',
           fontSize: 27,
           fontFamily: 'Bookman Old Style',
           fill: 'white'
@@ -266,7 +266,7 @@
         var idSubTitle = new Konva.Text({
           x: 180,
           y: 75,
-          text: 'My Money My Rules',
+          text: 'Sustainable Development',
           fontSize: 20,
           fontFamily: 'Majestic Romance',
           fill: 'white'
@@ -310,7 +310,7 @@
         var idNumber = new Konva.Text({
           x: 240,
           y: 180,
-          text: `ID no.        :  SMAU00${data.idNumber}`,
+          text: `ID no.        :  NHCL00${data.idNumber}`,
           fontSize: 15,
           fontFamily: 'sans-serif',
           fill: '#557D97'
@@ -364,7 +364,7 @@
         var footerBrandText = new Konva.Text({
           x: 210,
           y: 290,
-          text: 'STINGY MEN ASSOCIATION UG.',
+          text: 'NULUBALE HOLDINGS Co. LTD',
           fontSize: 20,
           fontFamily: 'serif',
           fill: 'white'
@@ -373,7 +373,7 @@
         var footerReturnText = new Konva.Text({
           x: 100,
           y: 315,
-          text: 'If Found Please Retrun To The Head Office',
+          text: 'If Found Please Return To The Head Office',
           fontSize: 18,
           fontFamily: 'sans-serif',
           fill: 'white'
@@ -454,8 +454,8 @@
       }
 
       var data = {
-        fullName: 'KATUMBA JOHN',
-        title: 'Patron SMAU',
+        fullName: 'MUKASA HENRY',
+        title: 'Member NHCL',
         idNumber: Math.round(Math.random() * 10000),
         region: 'Central',
         division: 'Nakawa',
@@ -476,7 +476,7 @@
         if (dataURL) {
           console.log('nvnvnvnv: ', loader);
           var link = document.createElement('a')
-          link.download = 'My SMAU ID.png'
+          link.download = 'My NHCL ID.png'
           link.href = dataURL
           document.body.appendChild(link)
           link.click()
